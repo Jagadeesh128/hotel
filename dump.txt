@@ -1,0 +1,33 @@
+    {
+      roomNumber: 1,
+      roomType: 'Normal Room',
+      amenities: 'Ac, Freewifi, Tv, Bathroom, Kitchen',
+      price: 500,
+      photos:
+        'https://www.lemontreehotels.com/images/propertygallery/28_Jun_2023_04_36_21Lobby.jpg',
+      checkinTime: new Date('11-Feb-2024'),
+      checkoutTime: new Date('12-Feb-2024'),
+      rating: 3.5,
+    },
+    {
+      roomNumber: 2,
+      roomType: 'Deluxe Room',
+      amenities: 'Ac, Freewifi, Tv, Bathroom, Kitchen',
+      price: 1000,
+      photos:
+        'https://www.lemontreehotels.com/images/propertygallery/28_Jun_2023_05_27_06Deluxe-Room,-King-Bed.jpg',
+      checkinTime: new Date('24-Feb-2024'),
+      checkoutTime: new Date('25-Feb-2024'),
+      rating: 4.2,
+    },
+    {
+      roomNumber: 3,
+      roomType: 'Private Suit Room',
+      amenities: 'Ac, Freewifi, Tv, Bathroom, Kitchen',
+      price: 10000,
+      photos:
+        'https://www.lemontreehotels.com/images/propertygallery/28_Jun_2023_05_27_06Deluxe-Room,-King-Bed.jpg',
+      checkinTime: new Date('7-Feb-024'),
+      checkoutTime: new Date('1-Feb-2024'),
+      rating: 4.3,
+    },
