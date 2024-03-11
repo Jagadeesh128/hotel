@@ -20,7 +20,7 @@
   {{ selectedRoom | json }}
 </div>
 
-<button (click)="addRoom()">Add Room</button>
+<button routerLink="add">Add Room</button>
 
 
 <!-- {{ rooms.availableRooms ?? "no rooms" }} -->
@@ -45,3 +45,5 @@
 <h1>
   {{totalBytes}} loaded
 </h1>
+
+<router-outlet></router-outlet>
