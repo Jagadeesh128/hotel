@@ -15,6 +15,7 @@ import { HeaderComponent } from '../header/header.component';
 import { RoomsService } from './services/rooms.service';
 import { Observable, Subject, Subscription, catchError, map, observable, of } from 'rxjs';
 import { HttpEventType } from '@angular/common/http';
+import { ConfigService } from '../services/config.service';
 
 @Component({
   selector: 'app-rooms',
@@ -68,7 +69,7 @@ export class RoomsComponent
     map((rooms)=> rooms.length)
   );
 
-  constructor(@SkipSelf() private roomsService: RoomsService) {}
+  constructor(@SkipSelf() private roomsService: RoomsService, private configService: ConfigService) {}
 
   ngAfterViewChecked(): void {}
 

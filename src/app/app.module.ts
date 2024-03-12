@@ -22,8 +22,9 @@ import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { HoverDirective } from './hover.directive';
 import { EmailvalidatorDirective } from './emailvalidator/emailvalidator.directive';
-import { RoomsModule } from './rooms.module';
+// import { RoomsModule } from './rooms.module';
 import { HeaderModule } from './header/header.module';
+import { RouteConfigToken } from './services/routeConfig.service';
 
 function initFactory(InitService: InitService){
   return () => InitService.init();
@@ -42,7 +43,7 @@ function initFactory(InitService: InitService){
   ],
   imports: [
     BrowserModule,
-    RoomsModule,
+    // RoomsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
@@ -71,6 +72,10 @@ function initFactory(InitService: InitService){
       useFactory: initFactory,
       deps: [InitService],
       multi: true
+    },
+    {
+      provide: RouteConfigToken,
+      useValue: { title: 'Home'},
     }
   ],
   bootstrap: [AppComponent]
